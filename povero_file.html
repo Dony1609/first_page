@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang='it'>
+<head>
+    <title>F1</title>
+    <meta charset = 'UTF-8'>
+    <meta name= 'viewport' content='width-device-width, initial-scale=1.0'>
+</head>
+<body>
+    <h1>Piloti F1 </h1>
+
+    <script>
+        const piloti = [
+            {
+                "scuderia" : "Ferrari",
+                "pilota 1" : "Leclerc",
+                "pilota 2" : "Hamilton"
+            },
+            {
+                "scuderia" : "Mercedes",
+                "pilota 1" : "Russel",
+                "pilota 2" : "Antonelli"
+            },
+            {
+                "scuderia" : "McLaren",
+                "pilota 1" : "Norris",
+                "pilota 2" : "Piastri"
+            }
+        ]
+
+        document.write("<h2>stampa tutte le scuderie e i piloti</h2>")
+        piloti.forEach(pilota => {
+            Object.entries(pilota).forEach(([chiave, valore]) => {
+                document.write(`<p>${chiave}: ${valore}</p>`);
+            })
+        })
+    </script>
+</body>
+</html>
